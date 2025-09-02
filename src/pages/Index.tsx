@@ -11,41 +11,103 @@ const Index = () => {
   const perfumes = [
     {
       id: 1,
-      name: 'Розовое золото',
-      brand: 'Luxury Collection',
-      price: '12 500 ₽',
-      samplePrice: '350 ₽',
-      image: '/img/78eb8ad9-d0df-4826-9e9a-03e1c9a56d9f.jpg',
-      description: 'Элегантный аромат с нотами розы, ванили и амбры',
-      notes: ['Роза', 'Ваниль', 'Амбра', 'Сандал']
+      name: 'Versace Eros',
+      brand: 'Versace',
+      price: '8 500 ₽',
+      image: '/img/6a64a2fe-defa-49ea-b10d-b01db7637ec4.jpg',
+      description: 'Мужской аромат страсти и силы с нотами мяты, яблока и ванили',
+      notes: ['Мята', 'Зеленое яблоко', 'Лимон', 'Ваниль', 'Кедр'],
+      samples: [
+        { volume: '3 гр', price: '570 ₽', type: 'чистое масло' },
+        { volume: '5 мл', price: '570 ₽', type: 'распыление, концентрат 50/50' },
+        { volume: '10 мл', price: '950 ₽', type: 'распыление, концентрат 50/50' },
+        { volume: '20 мл', price: '2 000 ₽', type: 'распыление, концентрат 50/50' }
+      ]
     },
     {
       id: 2,
-      name: 'Золотая империя',
-      brand: 'Imperial Scents',
-      price: '15 800 ₽',
-      samplePrice: '420 ₽',
-      image: '/img/ac4cb203-9928-4d51-858e-6d96ab1919c1.jpg',
-      description: 'Роскошная композиция для особых моментов',
-      notes: ['Жасмин', 'Пачули', 'Кедр', 'Мускус']
+      name: 'Dior Sauvage',
+      brand: 'Dior',
+      price: '12 500 ₽',
+      image: '/img/2fd62f9b-2a29-4a87-8498-dafee46b503c.jpg',
+      description: 'Свежий и мощный аромат с нотами бергамота, перца и амброксана',
+      notes: ['Бергамот', 'Розовый перец', 'Лаванда', 'Амброксан'],
+      samples: [
+        { volume: '3 гр', price: '600 ₽', type: 'чистое масло' },
+        { volume: '5 мл', price: '600 ₽', type: 'распыление, концентрат 50/50' },
+        { volume: '10 мл', price: '1 100 ₽', type: 'распыление, концентрат 50/50' },
+        { volume: '20 мл', price: '2 150 ₽', type: 'распыление, концентрат 50/50' }
+      ]
     },
     {
       id: 3,
-      name: 'Восточная тайна',
-      brand: 'Oriental Dreams',
-      price: '9 900 ₽',
-      samplePrice: '280 ₽',
+      name: 'Creed Aventus',
+      brand: 'Creed',
+      price: '18 900 ₽',
+      image: '/img/ac4cb203-9928-4d51-858e-6d96ab1919c1.jpg',
+      description: 'Легендарный аромат успеха с нотами ананаса, дыма и сандала',
+      notes: ['Ананас', 'Яблоко', 'Береза', 'Сандал', 'Мускус'],
+      samples: [
+        { volume: '3 гр', price: '600 ₽', type: 'чистое масло' },
+        { volume: '5 мл', price: '600 ₽', type: 'распыление, концентрат 50/50' },
+        { volume: '10 мл', price: '1 100 ₽', type: 'распыление, концентрат 50/50' },
+        { volume: '20 мл', price: '2 150 ₽', type: 'распыление, концентрат 50/50' }
+      ]
+    },
+    {
+      id: 4,
+      name: 'Tom Ford Bitter Peach',
+      brand: 'Tom Ford',
+      price: '16 800 ₽',
+      image: '/img/a1794971-735c-4445-91ee-032de02834c5.jpg',
+      description: 'Чувственный фруктовый аромат с персиком, розой и пачули',
+      notes: ['Персик', 'Роза', 'Сандал', 'Пачули'],
+      samples: [
+        { volume: '3 гр', price: '600 ₽', type: 'чистое масло' },
+        { volume: '5 мл', price: '600 ₽', type: 'распыление, концентрат 50/50' },
+        { volume: '10 мл', price: '1 100 ₽', type: 'распыление, концентрат 50/50' },
+        { volume: '20 мл', price: '2 150 ₽', type: 'распыление, концентрат 50/50' }
+      ]
+    },
+    {
+      id: 5,
+      name: 'Louis Vuitton L\'Immensité',
+      brand: 'Louis Vuitton',
+      price: '14 200 ₽',
       image: '/img/78eb8ad9-d0df-4826-9e9a-03e1c9a56d9f.jpg',
-      description: 'Загадочный аромат с восточными специями',
-      notes: ['Корица', 'Кардамон', 'Роза', 'Уд']
+      description: 'Элегантный цитрусово-древесный аромат для утонченных мужчин',
+      notes: ['Грейпфрут', 'Имбирь', 'Кедр', 'Лабданум'],
+      samples: [
+        { volume: '3 гр', price: '600 ₽', type: 'чистое масло' },
+        { volume: '5 мл', price: '600 ₽', type: 'распыление, концентрат 50/50' },
+        { volume: '10 мл', price: '1 100 ₽', type: 'распыление, концентрат 50/50' },
+        { volume: '20 мл', price: '2 150 ₽', type: 'распыление, концентрат 50/50' }
+      ]
+    },
+    {
+      id: 6,
+      name: 'Sospiro Erba Pura',
+      brand: 'Sospiro',
+      price: '15 500 ₽',
+      image: '/img/2fd62f9b-2a29-4a87-8498-dafee46b503c.jpg',
+      description: 'Сладкий и свежий аромат с цитрусами и ванилью',
+      notes: ['Лимон', 'Апельсин', 'Ваниль', 'Мускус'],
+      samples: [
+        { volume: '3 гр', price: '600 ₽', type: 'чистое масло' },
+        { volume: '5 мл', price: '600 ₽', type: 'распыление, концентрат 50/50' },
+        { volume: '10 мл', price: '1 100 ₽', type: 'распыление, концентрат 50/50' },
+        { volume: '20 мл', price: '2 150 ₽', type: 'распыление, концентрат 50/50' }
+      ]
     }
   ];
 
   const brands = [
-    { name: 'Luxury Collection', count: 28 },
-    { name: 'Imperial Scents', count: 15 },
-    { name: 'Oriental Dreams', count: 22 },
-    { name: 'Golden Touch', count: 19 }
+    { name: 'Versace', count: 8 },
+    { name: 'Dior', count: 12 },
+    { name: 'Creed', count: 15 },
+    { name: 'Tom Ford', count: 22 },
+    { name: 'Louis Vuitton', count: 9 },
+    { name: 'Sospiro', count: 6 }
   ];
 
   const navigation = [
